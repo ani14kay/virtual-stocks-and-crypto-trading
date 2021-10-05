@@ -1,3 +1,5 @@
-# virtual-stocks-and-crypto-trading
+## virtual-stocks-and-crypto-trading
 
-- Himanshu Kumar Verma - 202052317
+### **Managed By : -** 
+- Himanshu Kumar Verma (202052317)
+- Mugdha Sharma (202052325)
