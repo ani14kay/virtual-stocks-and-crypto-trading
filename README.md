@@ -4,6 +4,14 @@
 
 ### <p style="text-align: center;">**Introduction**</p>
 
+```
+
+This project is part of our semester assessment process.
+This course will cover all of the essential concepts of object-oriented programming.
+
+We'll be using Java to cover all the fundamental OOP concepts.
+```
+
 ### **Managed By : -** 
 - ANISHA KATIYAR (202051027)
 - JAYANT ASUDHANI (202052319)
