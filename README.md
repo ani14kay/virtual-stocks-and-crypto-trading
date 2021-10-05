@@ -11,6 +11,10 @@ This course will cover all of the essential concepts of object-oriented programm
 
 We'll be using Java to cover all the fundamental OOP concepts.
 ```
+## About the project :
+```
+
+```
 
 ### **Managed By : -** 
 - ANISHA KATIYAR (202051027)
