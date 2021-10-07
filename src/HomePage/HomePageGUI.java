@@ -16,6 +16,11 @@ public class HomePageGUI extends JFrame {
 
         Header header = new Header();//name label is created
         this.add(header);//logo label added to the HomePageGUI
+
+        SideMenu sideMenu = new SideMenu();//side menu panel is called
+        this.add(sideMenu);//side menu is added to HomePageGUI
+
+
         this.setVisible(true);// HomePageGUI visibility
 
     }
