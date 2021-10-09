@@ -20,7 +20,6 @@ public class HomePageGUI extends JFrame {
         SideMenu sideMenu = new SideMenu();//side menu panel is called
         this.add(sideMenu);//side menu is added to HomePageGUI
 
-
         this.setVisible(true);// HomePageGUI visibility
 
     }
