@@ -2,8 +2,10 @@ package HomePage;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class SideMenu extends JPanel {
+    static JButton profile,helpAndSupport,portfolio,investing,wallet,intraday,newsAndArticles,portfolioCrypto,investingCrypto,newsAndArticlesCrypto;
     SideMenu(){
         this.setBackground(new Color(217,218,222));//side menu BG
         this.setBounds(0,0,275,1080);// side menu bounds set
@@ -14,7 +16,7 @@ public class SideMenu extends JPanel {
         menuText.setBounds(10,40,100,20);
         this.add(menuText);
 
-        JButton profile = new JButton();
+        profile = new JButton();
         profile.setBackground(new Color(217,218,222));
         profile.setBounds(50,75,150,30);
         profile.setBorder(null);
@@ -22,9 +24,10 @@ public class SideMenu extends JPanel {
         profile.setFocusPainted(false);
         profile.setForeground(new Color(164, 164, 166));
         profile.setText("Profile");
+
         this.add(profile);
 
-        JButton helpAndSupport = new JButton();
+        helpAndSupport = new JButton();
         helpAndSupport.setBackground(new Color(217,218,222));
         helpAndSupport.setBounds(50,115,150,30);
         helpAndSupport.setBorder(null);
@@ -40,7 +43,7 @@ public class SideMenu extends JPanel {
         stocks.setBounds(50,175,100,20);
         this.add(stocks);
 
-        JButton portfolio = new JButton();
+        portfolio = new JButton();
         portfolio.setBackground(new Color(217,218,222));
         portfolio.setBounds(50,215,150,30);
         portfolio.setBorder(null);
@@ -50,7 +53,7 @@ public class SideMenu extends JPanel {
         portfolio.setText("Portfolio");
         this.add(portfolio);
 
-        JButton investing = new JButton();
+        investing = new JButton();
         investing.setBackground(new Color(217,218,222));
         investing.setBounds(50,255,150,30);
         investing.setBorder(null);
@@ -60,7 +63,7 @@ public class SideMenu extends JPanel {
         investing.setText("Investing");
         this.add(investing);
 
-        JButton wallet = new JButton();
+        wallet = new JButton();
         wallet.setBackground(new Color(217,218,222));
         wallet.setBounds(50,295,150,30);
         wallet.setBorder(null);
@@ -70,7 +73,7 @@ public class SideMenu extends JPanel {
         wallet.setText("Wallet");
         this.add(wallet);
 
-        JButton intraday = new JButton();
+        intraday = new JButton();
         intraday.setBackground(new Color(217,218,222));
         intraday.setBounds(50,335,150,30);
         intraday.setBorder(null);
@@ -80,7 +83,7 @@ public class SideMenu extends JPanel {
         intraday.setText("Intraday");
         this.add(intraday);
 
-        JButton newsAndArticles = new JButton();
+        newsAndArticles = new JButton();
         newsAndArticles.setBackground(new Color(217,218,222));
         newsAndArticles.setBounds(50,375,150,30);
         newsAndArticles.setBorder(null);
@@ -96,7 +99,7 @@ public class SideMenu extends JPanel {
         crypto.setBounds(50,435,100,20);
         this.add(crypto);
 
-        JButton portfolioCrypto = new JButton();
+        portfolioCrypto = new JButton();
         portfolioCrypto.setBackground(new Color(217,218,222));
         portfolioCrypto.setBounds(50,475,150,30);
         portfolioCrypto.setBorder(null);
@@ -106,7 +109,7 @@ public class SideMenu extends JPanel {
         portfolioCrypto.setText("Portfolio");
         this.add(portfolioCrypto);
 
-        JButton investingCrypto = new JButton();
+        investingCrypto = new JButton();
         investingCrypto.setBackground(new Color(217,218,222));
         investingCrypto.setBounds(50,515,150,30);
         investingCrypto.setBorder(null);
@@ -116,7 +119,7 @@ public class SideMenu extends JPanel {
         investingCrypto.setText("Investing");
         this.add(investingCrypto);
 
-        JButton newsAndArticlesCrypto = new JButton();
+        newsAndArticlesCrypto = new JButton();
         newsAndArticlesCrypto.setBackground(new Color(217,218,222));
         newsAndArticlesCrypto.setBounds(50,555,150,30);
         newsAndArticlesCrypto.setBorder(null);
