@@ -25,6 +25,11 @@ public class HomePageGUI extends JFrame {
         PortfolioGUI portfolioGUI = new PortfolioGUI();
         InvestingGUI investingGUI = new InvestingGUI();
         WalletGUI walletGUI = new WalletGUI();
+        IntradayGUI intradayGUI = new IntradayGUI();
+        NewsAndArticlesGUI newsAndArticlesGUI = new NewsAndArticlesGUI();
+        PortfolioCryptoGUI portfolioCryptoGUI = new PortfolioCryptoGUI();
+        InvestingCryptoGUI investingCryptoGUI = new InvestingCryptoGUI();
+        NewsAndArticlesCryptoGUI newsAndArticlesCryptoGUI = new NewsAndArticlesCryptoGUI();
 
         this.add(profileGUI);
         SideMenu.profile.addActionListener(e -> {
@@ -44,6 +49,12 @@ public class HomePageGUI extends JFrame {
             portfolioGUI.setVisible(false);
             investingGUI.setVisible(false);
             walletGUI.setVisible(false);
+            intradayGUI.setVisible(false);
+            newsAndArticlesGUI.setVisible(false);
+            portfolioCryptoGUI.setVisible(false);
+            investingCryptoGUI.setVisible(false);
+            newsAndArticlesCryptoGUI.setVisible(false);
+
         });
 
         this.add(helpAndSupportGUI);
@@ -64,6 +75,11 @@ public class HomePageGUI extends JFrame {
             portfolioGUI.setVisible(false);
             investingGUI.setVisible(false);
             walletGUI.setVisible(false);
+            intradayGUI.setVisible(false);
+            newsAndArticlesGUI.setVisible(false);
+            portfolioCryptoGUI.setVisible(false);
+            investingCryptoGUI.setVisible(false);
+            newsAndArticlesCryptoGUI.setVisible(false);
 
         });
 
@@ -85,6 +101,11 @@ public class HomePageGUI extends JFrame {
             portfolioGUI.setVisible(true);
             investingGUI.setVisible(false);
             walletGUI.setVisible(false);
+            intradayGUI.setVisible(false);
+            newsAndArticlesGUI.setVisible(false);
+            portfolioCryptoGUI.setVisible(false);
+            investingCryptoGUI.setVisible(false);
+            newsAndArticlesCryptoGUI.setVisible(false);
 
         });
 
@@ -106,6 +127,11 @@ public class HomePageGUI extends JFrame {
             portfolioGUI.setVisible(false);
             investingGUI.setVisible(true);
             walletGUI.setVisible(false);
+            intradayGUI.setVisible(false);
+            newsAndArticlesGUI.setVisible(false);
+            portfolioCryptoGUI.setVisible(false);
+            investingCryptoGUI.setVisible(false);
+            newsAndArticlesCryptoGUI.setVisible(false);
 
         });
 
@@ -127,7 +153,141 @@ public class HomePageGUI extends JFrame {
             portfolioGUI.setVisible(false);
             investingGUI.setVisible(false);
             walletGUI.setVisible(true);
+            intradayGUI.setVisible(false);
+            newsAndArticlesGUI.setVisible(false);
+            portfolioCryptoGUI.setVisible(false);
+            investingCryptoGUI.setVisible(false);
+            newsAndArticlesCryptoGUI.setVisible(false);
 
+        });
+
+        this.add(intradayGUI);
+        SideMenu.intraday.addActionListener(e -> {
+            intradayGUI.setBackground(new Color(50,250,250));
+            SideMenu.profile.setForeground(new Color(164, 164, 166));
+            SideMenu.helpAndSupport.setForeground(new Color(164, 164, 166));
+            SideMenu.portfolio.setForeground(new Color(164, 164, 166));
+            SideMenu.investing.setForeground(new Color(164, 164, 166));
+            SideMenu.wallet.setForeground(new Color(164, 164, 166));
+            SideMenu.intraday.setForeground(new Color(18, 30, 255));
+            SideMenu.newsAndArticles.setForeground(new Color(164, 164, 166));
+            SideMenu.portfolioCrypto.setForeground(new Color(164, 164, 166));
+            SideMenu.investingCrypto.setForeground(new Color(164, 164, 166));
+            SideMenu.newsAndArticlesCrypto.setForeground(new Color(164, 164, 166));
+            profileGUI.setVisible(false);
+            helpAndSupportGUI.setVisible(false);
+            portfolioGUI.setVisible(false);
+            investingGUI.setVisible(false);
+            walletGUI.setVisible(false);
+            intradayGUI.setVisible(true);
+            newsAndArticlesGUI.setVisible(false);
+            portfolioCryptoGUI.setVisible(false);
+            investingCryptoGUI.setVisible(false);
+            newsAndArticlesCryptoGUI.setVisible(false);
+
+        });
+
+        this.add(newsAndArticlesGUI);
+        SideMenu.newsAndArticles.addActionListener(e -> {
+            newsAndArticlesGUI.setBackground(new Color(255, 00,255));
+            SideMenu.profile.setForeground(new Color(164, 164, 166));
+            SideMenu.helpAndSupport.setForeground(new Color(164, 164, 166));
+            SideMenu.portfolio.setForeground(new Color(164, 164, 166));
+            SideMenu.investing.setForeground(new Color(164, 164, 166));
+            SideMenu.wallet.setForeground(new Color(164, 164, 166));
+            SideMenu.intraday.setForeground(new Color(164, 164, 166));
+            SideMenu.newsAndArticles.setForeground(new Color(18, 30, 255));
+            SideMenu.portfolioCrypto.setForeground(new Color(164, 164, 166));
+            SideMenu.investingCrypto.setForeground(new Color(164, 164, 166));
+            SideMenu.newsAndArticlesCrypto.setForeground(new Color(164, 164, 166));
+            profileGUI.setVisible(false);
+            helpAndSupportGUI.setVisible(false);
+            portfolioGUI.setVisible(false);
+            investingGUI.setVisible(false);
+            walletGUI.setVisible(false);
+            intradayGUI.setVisible(false);
+            newsAndArticlesGUI.setVisible(true);
+            portfolioCryptoGUI.setVisible(false);
+            investingCryptoGUI.setVisible(false);
+            newsAndArticlesCryptoGUI.setVisible(false);
+
+        });
+
+        this.add(portfolioCryptoGUI);
+        SideMenu.portfolioCrypto.addActionListener(e -> {
+            portfolioCryptoGUI.setBackground(new Color(255, 94, 0));
+            SideMenu.profile.setForeground(new Color(164, 164, 166));
+            SideMenu.helpAndSupport.setForeground(new Color(164, 164, 166));
+            SideMenu.portfolio.setForeground(new Color(164, 164, 166));
+            SideMenu.investing.setForeground(new Color(164, 164, 166));
+            SideMenu.wallet.setForeground(new Color(164, 164, 166));
+            SideMenu.intraday.setForeground(new Color(164, 164, 166));
+            SideMenu.newsAndArticles.setForeground(new Color(164, 164, 166));
+            SideMenu.portfolioCrypto.setForeground(new Color(18, 30, 255));
+            SideMenu.investingCrypto.setForeground(new Color(164, 164, 166));
+            SideMenu.newsAndArticlesCrypto.setForeground(new Color(164, 164, 166));
+            profileGUI.setVisible(false);
+            helpAndSupportGUI.setVisible(false);
+            portfolioGUI.setVisible(false);
+            investingGUI.setVisible(false);
+            walletGUI.setVisible(false);
+            intradayGUI.setVisible(false);
+            newsAndArticlesGUI.setVisible(false);
+            portfolioCryptoGUI.setVisible(true);
+            investingCryptoGUI.setVisible(false);
+            newsAndArticlesCryptoGUI.setVisible(false);
+
+        });
+
+        this.add(investingCryptoGUI);
+        SideMenu.investingCrypto.addActionListener(e -> {
+            investingCryptoGUI.setBackground(new Color(255, 247, 0));
+            SideMenu.profile.setForeground(new Color(164, 164, 166));
+            SideMenu.helpAndSupport.setForeground(new Color(164, 164, 166));
+            SideMenu.portfolio.setForeground(new Color(164, 164, 166));
+            SideMenu.investing.setForeground(new Color(164, 164, 166));
+            SideMenu.wallet.setForeground(new Color(164, 164, 166));
+            SideMenu.intraday.setForeground(new Color(164, 164, 166));
+            SideMenu.newsAndArticles.setForeground(new Color(164, 164, 166));
+            SideMenu.portfolioCrypto.setForeground(new Color(164, 164, 166));
+            SideMenu.investingCrypto.setForeground(new Color(18, 30, 255));
+            SideMenu.newsAndArticlesCrypto.setForeground(new Color(164, 164, 166));
+            profileGUI.setVisible(false);
+            helpAndSupportGUI.setVisible(false);
+            portfolioGUI.setVisible(false);
+            investingGUI.setVisible(false);
+            walletGUI.setVisible(false);
+            intradayGUI.setVisible(false);
+            newsAndArticlesGUI.setVisible(false);
+            portfolioCryptoGUI.setVisible(false);
+            investingCryptoGUI.setVisible(true);
+            newsAndArticlesCryptoGUI.setVisible(false);
+
+        });
+
+        this.add(newsAndArticlesCryptoGUI);
+        SideMenu.newsAndArticlesCrypto.addActionListener(e -> {
+            newsAndArticlesCryptoGUI.setBackground(new Color(0, 255, 166));
+            SideMenu.profile.setForeground(new Color(164, 164, 166));
+            SideMenu.helpAndSupport.setForeground(new Color(164, 164, 166));
+            SideMenu.portfolio.setForeground(new Color(164, 164, 166));
+            SideMenu.investing.setForeground(new Color(164, 164, 166));
+            SideMenu.wallet.setForeground(new Color(164, 164, 166));
+            SideMenu.intraday.setForeground(new Color(164, 164, 166));
+            SideMenu.newsAndArticles.setForeground(new Color(164, 164, 166));
+            SideMenu.portfolioCrypto.setForeground(new Color(164, 164, 166));
+            SideMenu.investingCrypto.setForeground(new Color(164, 164, 166));
+            SideMenu.newsAndArticlesCrypto.setForeground(new Color(18, 30, 255));
+            profileGUI.setVisible(false);
+            helpAndSupportGUI.setVisible(false);
+            portfolioGUI.setVisible(false);
+            investingGUI.setVisible(false);
+            walletGUI.setVisible(false);
+            intradayGUI.setVisible(false);
+            newsAndArticlesGUI.setVisible(false);
+            portfolioCryptoGUI.setVisible(false);
+            investingCryptoGUI.setVisible(false);
+            newsAndArticlesCryptoGUI.setVisible(true);
         });
 
         this.setVisible(true);// HomePageGUI visibility
