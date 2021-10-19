@@ -5,6 +5,17 @@ import java.awt.*;
 
 public class HomePageGUI extends JFrame {
     static  ImageIcon logo = new ImageIcon("Assets/Icons/logo.png");//creating an ImageIcon
+    public ProfileGUI profileGUI = new ProfileGUI();
+    public HelpAndSupportGUI helpAndSupportGUI = new HelpAndSupportGUI();
+    public PortfolioGUI portfolioGUI = new PortfolioGUI();
+    public InvestingGUI investingGUI = new InvestingGUI();
+    public WalletGUI walletGUI = new WalletGUI();
+    IntradayGUI intradayGUI = new IntradayGUI();
+    public NewsAndArticlesGUI newsAndArticlesGUI = new NewsAndArticlesGUI();
+    public PortfolioCryptoGUI portfolioCryptoGUI = new PortfolioCryptoGUI();
+    public InvestingCryptoGUI investingCryptoGUI = new InvestingCryptoGUI();
+    NewsAndArticlesCryptoGUI newsAndArticlesCryptoGUI = new NewsAndArticlesCryptoGUI();
+
 
     HomePageGUI(){
         this.setTitle("Virtual Stock an CryptoCurrency management System");// adding title
@@ -21,19 +32,8 @@ public class HomePageGUI extends JFrame {
         SideMenu sideMenu = new SideMenu();//side menu panel is called
         this.add(sideMenu);//side menu is added to HomePageGUI
 
-        WelcomeGUI welcomeGUI = new WelcomeGUI();
-        this.add(welcomeGUI);
-
-        ProfileGUI profileGUI = new ProfileGUI();
-        HelpAndSupportGUI helpAndSupportGUI = new HelpAndSupportGUI();
-        PortfolioGUI portfolioGUI = new PortfolioGUI();
-        InvestingGUI investingGUI = new InvestingGUI();
-        WalletGUI walletGUI = new WalletGUI();
-        IntradayGUI intradayGUI = new IntradayGUI();
-        NewsAndArticlesGUI newsAndArticlesGUI = new NewsAndArticlesGUI();
-        PortfolioCryptoGUI portfolioCryptoGUI = new PortfolioCryptoGUI();
-        InvestingCryptoGUI investingCryptoGUI = new InvestingCryptoGUI();
-        NewsAndArticlesCryptoGUI newsAndArticlesCryptoGUI = new NewsAndArticlesCryptoGUI();
+        WelcomeGUI welcomeGUI = new WelcomeGUI();//welcome page gui is called
+        this.add(welcomeGUI);//welcome page gui is added
 
         this.add(profileGUI);
         SideMenu.profile.addActionListener(e -> {
