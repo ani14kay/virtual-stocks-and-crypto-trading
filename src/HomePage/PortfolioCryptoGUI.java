@@ -7,6 +7,7 @@ public class PortfolioCryptoGUI extends JPanel {
     JLabel nothing,suggestion;
     ImageIcon emptyError;
     PortfolioCryptoGUI(){
+        //null page is created(when the user have no crypto for now)
         nothing = new JLabel("You haven't purchased or sold any crypto yet!!");
         suggestion = new JLabel("Please go to Investing section");
         emptyError = new ImageIcon("Assets/Images/emptyPiggy.png");
