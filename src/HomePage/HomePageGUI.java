@@ -33,7 +33,7 @@ public class HomePageGUI extends JFrame {
 
         this.add(profileGUI);
         SideMenu.profile.addActionListener(e -> {
-            profileGUI.setBackground(new Color(000));
+            profileGUI.setBackground(new Color(255, 00, 00));
             SideMenu.profile.setForeground(new Color(18, 30, 255));
             SideMenu.helpAndSupport.setForeground(new Color(164, 164, 166));
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));
@@ -187,9 +187,10 @@ public class HomePageGUI extends JFrame {
 
         });
 
+        
         this.add(newsAndArticlesGUI);
         SideMenu.newsAndArticles.addActionListener(e -> {
-            newsAndArticlesGUI.setBackground(new Color(255, 00,255));
+            newsAndArticlesGUI.setBackground(new Color(255,255,255));
             SideMenu.profile.setForeground(new Color(164, 164, 166));
             SideMenu.helpAndSupport.setForeground(new Color(164, 164, 166));
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));

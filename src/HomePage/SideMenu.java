@@ -2,7 +2,7 @@ package HomePage;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.concurrent.atomic.AtomicReference;
+
 
 public class SideMenu extends JPanel {
     static JButton profile,helpAndSupport,portfolio,investing,wallet,intraday,newsAndArticles,portfolioCrypto,investingCrypto,newsAndArticlesCrypto;
