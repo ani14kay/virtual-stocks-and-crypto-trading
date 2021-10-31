@@ -3,14 +3,8 @@ package HomePage;
 import javax.swing.*;
 import java.awt.*;
 
-public PortfolioCryptoGUI extends JPanel {
-    PortfolioCryptoGUI(){
-        this.setBackground(new Color(250,250,255));
-        this.setBounds(300,150,1200,600);
-        this.setVisible(true);
-    }
-}
-    class PortfolioGUI extends JPanel {
+
+  public class PortfolioGUI extends JPanel {
         JButton wishlist,market,Home,deposit,withdraw,back,next,s1,s2,s3,s4;
         JButton i1,i2,i3,i4;
         JLabel heading;
