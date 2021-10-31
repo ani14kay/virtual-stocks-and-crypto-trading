@@ -1,7 +1,7 @@
 package HomePage;
 
 import javax.swing.*;
-import java.awt.*;
+import HomePage.HomePageGUI;
 
 public class Main extends JFrame {
     public static void main(String[] args) {
