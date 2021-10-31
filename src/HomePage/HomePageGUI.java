@@ -172,7 +172,7 @@ public class HomePageGUI extends JFrame {
 
         this.add(intradayGUI);
         SideMenu.intraday.addActionListener(e -> {
-            intradayGUI.setBackground(new Color(50,250,250));
+
             SideMenu.profile.setForeground(new Color(164, 164, 166));
             SideMenu.helpAndSupport.setForeground(new Color(164, 164, 166));
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));
