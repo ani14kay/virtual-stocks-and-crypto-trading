@@ -91,7 +91,7 @@ public class HomePageGUI extends JFrame {
 
         this.add(portfolioGUI);
         SideMenu.portfolio.addActionListener(e -> {
-            portfolioGUI.setBackground(new Color(255,166,00));
+            portfolioGUI.setBackground(Color.black);
             SideMenu.profile.setForeground(new Color(164, 164, 166));
             SideMenu.helpAndSupport.setForeground(new Color(164, 164, 166));
             SideMenu.portfolio.setForeground(new Color(18, 30, 255));
