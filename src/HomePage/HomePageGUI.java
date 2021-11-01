@@ -252,7 +252,7 @@ public class HomePageGUI extends JFrame {
 
         this.add(investingCryptoGUI);
         SideMenu.investingCrypto.addActionListener(e -> {
-            investingCryptoGUI.setBackground(new Color(255, 247, 0));
+            investingCryptoGUI.setBackground(new Color(250, 250, 255));
             SideMenu.profile.setForeground(new Color(164, 164, 166));
             SideMenu.helpAndSupport.setForeground(new Color(164, 164, 166));
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));
