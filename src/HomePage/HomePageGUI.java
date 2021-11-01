@@ -5,16 +5,16 @@ import java.awt.*;
 
 public class HomePageGUI extends JFrame {
     static  ImageIcon logo = new ImageIcon("Assets/Icons/logo.png");//creating an ImageIcon
-    public ProfileGUI profileGUI = new ProfileGUI();
-    public HelpAndSupportGUI helpAndSupportGUI = new HelpAndSupportGUI();
-    public PortfolioGUI portfolioGUI = new PortfolioGUI();
-    public InvestingGUI investingGUI = new InvestingGUI();
-    public WalletGUI walletGUI = new WalletGUI();
-    IntradayGUI intradayGUI = new IntradayGUI();
-    public NewsAndArticlesGUI newsAndArticlesGUI = new NewsAndArticlesGUI();
-    public PortfolioCryptoGUI portfolioCryptoGUI = new PortfolioCryptoGUI();
-    public InvestingCryptoGUI investingCryptoGUI = new InvestingCryptoGUI();
-    NewsAndArticlesCryptoGUI newsAndArticlesCryptoGUI = new NewsAndArticlesCryptoGUI();
+    public static ProfileGUI profileGUI = new ProfileGUI();
+    public static HelpAndSupportGUI helpAndSupportGUI = new HelpAndSupportGUI();
+    public static PortfolioGUI portfolioGUI = new PortfolioGUI();
+    public static InvestingGUI investingGUI = new InvestingGUI();
+    public static WalletGUI walletGUI = new WalletGUI();
+    public static IntradayGUI intradayGUI = new IntradayGUI();
+    public static NewsAndArticlesGUI newsAndArticlesGUI = new NewsAndArticlesGUI();
+    public static PortfolioCryptoGUI portfolioCryptoGUI = new PortfolioCryptoGUI();
+    public static InvestingCryptoGUI investingCryptoGUI = new InvestingCryptoGUI();
+    public static NewsAndArticlesCryptoGUI newsAndArticlesCryptoGUI = new NewsAndArticlesCryptoGUI();
 
 
     HomePageGUI(){
@@ -91,7 +91,7 @@ public class HomePageGUI extends JFrame {
 
         this.add(portfolioGUI);
         SideMenu.portfolio.addActionListener(e -> {
-            portfolioGUI.setBackground(Color.black);
+
             SideMenu.profile.setForeground(new Color(164, 164, 166));
             SideMenu.helpAndSupport.setForeground(new Color(164, 164, 166));
             SideMenu.portfolio.setForeground(new Color(18, 30, 255));
