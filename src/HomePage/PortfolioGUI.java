@@ -9,15 +9,13 @@ import java.awt.*;
         JButton i1,i2,i3,i4;
         JLabel heading;
         JPanel top,bottom,center,grid;
-
+//
         PortfolioGUI() {
             //top heading
-             heading = new JLabel("WELCOME TO STOCKS PORTFOLIO!", SwingConstants.CENTER);
-            heading.setBounds(170,0,200,200);
+            heading = new JLabel("WELCOME TO STOCKS PORTFOLIO!", SwingConstants.CENTER);
+            heading.setBounds(230,0,1200,30);
             heading.setForeground(Color.black);
             heading.setFont(new Font("Verdana", Font.BOLD, 25));
-            heading.setBackground(Color.white);
-            heading.setOpaque(true);
 
 
             //BUTTON 1
@@ -67,46 +65,46 @@ import java.awt.*;
             Home.setHorizontalTextPosition(JButton.RIGHT);
 
 
-            // //button 4
-            // deposit = new JButton();
-            // deposit.setBounds(280, 100, 180, 70);
-            // //deposit.addActionListener((ActionListener) this);
-            // deposit.setText("Deposit INR");
-            // deposit.setFocusable(false);
-            // deposit.setFont(new Font("Comic Sans", Font.BOLD, 25));
-            // deposit.setForeground(Color.white);
-            // deposit.setBackground(Color.blue);
-            // deposit.setBorder(BorderFactory.createEtchedBorder());
+             //button 4
+             deposit = new JButton();
+             deposit.setBounds(280, 100, 180, 70);
+             //deposit.addActionListener((ActionListener) this);
+             deposit.setText("Deposit INR");
+             deposit.setFocusable(false);
+             deposit.setFont(new Font("Comic Sans", Font.BOLD, 25));
+             deposit.setForeground(Color.white);
+             deposit.setBackground(Color.blue);
+             deposit.setBorder(BorderFactory.createEtchedBorder());
 
-            // //button 4
-            // withdraw = new JButton();
-            // withdraw.setBounds(800, 100, 180, 70);
-            // // withdraw.addActionListener((ActionListener) this);
-            // withdraw.setText("Withdraw INR");
-            // withdraw.setFocusable(false);
-            // withdraw.setFont(new Font("Comic Sans", Font.BOLD, 25));
-            // withdraw.setForeground(Color.black);
-            // withdraw.setBackground(Color.white);
-            // withdraw.setBorder(BorderFactory.createEtchedBorder());
+             //button 4
+             withdraw = new JButton();
+             withdraw.setBounds(800, 100, 180, 70);
+             // withdraw.addActionListener((ActionListener) this);
+             withdraw.setText("Withdraw INR");
+             withdraw.setFocusable(false);
+             withdraw.setFont(new Font("Comic Sans", Font.BOLD, 25));
+             withdraw.setForeground(Color.black);
+             withdraw.setBackground(Color.white);
+             withdraw.setBorder(BorderFactory.createEtchedBorder());
 
             //button 5
             back = new JButton();
             back.setBounds(10, 0, 50, 50);
             //  back.addActionListener((ActionListener) this);
-          //  back.setText("Back");
+//            back.setText("Back");
             back.setFocusable(false);
             back.setBackground(Color.cyan);
             back.setBorder(BorderFactory.createEtchedBorder());
             ImageIcon backi = new ImageIcon("back.png");
             back.setIcon(backi);
-            //s1.setHorizontalTextPosition(JButton.RIGHT);
+            s1.setHorizontalTextPosition(JButton.RIGHT);
 
             //button 6
             next = new JButton();
             next.setBounds(80, 0, 50, 50);
             //  next.addActionListener((ActionListener) this);
-           // next.setText("Next");
-            next.setFocusable(false);
+            next.setText("Next");
+//            next.setFocusable(false);
             next.setBackground(Color.cyan);
             next.setBorder(BorderFactory.createEtchedBorder());
             ImageIcon nexti = new ImageIcon("Assets/Icons/next.png");
@@ -235,8 +233,8 @@ import java.awt.*;
             this.add(Home);
             this.add(back);
             this.add(next);
-            // this.add(deposit);
-            // this.add(withdraw);
+             this.add(deposit);
+             this.add(withdraw);
             this.add(s1);
             this.add(s2);
             this.add(s3);
@@ -249,12 +247,12 @@ import java.awt.*;
 
 
            this.add(top);
-           this.add(bottom, BorderLayout.SOUTH);
+           this.add(bottom);
            this.add(center);
 
-            bottom.setLayout(new FlowLayout(FlowLayout.CENTER, 20, 0));
+            bottom.setLayout(null);
             this.setBackground(new Color(250,250,255));
             this.setBounds(300,70,1200,700);
             this.setVisible(true);
         }
-        }
+  }
