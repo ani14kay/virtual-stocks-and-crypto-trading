@@ -31,7 +31,7 @@ import java.awt.*;
             wishlist.setForeground(Color.black);
             wishlist.setBackground(Color.cyan);
             wishlist.setBorder(BorderFactory.createEtchedBorder());
-            ImageIcon wish = new ImageIcon("wishlist.png");
+            ImageIcon wish = new ImageIcon("Assets/Icons/wishlist.png");//image icon
             wishlist.setIcon(wish);
             wishlist.setHorizontalTextPosition(JButton.RIGHT);
 
@@ -45,7 +45,7 @@ import java.awt.*;
             market.setForeground(Color.black);
             market.setBackground(Color.cyan);
             market.setBorder(BorderFactory.createEtchedBorder());
-            ImageIcon mkt = new ImageIcon("Market1.png");
+            ImageIcon mkt = new ImageIcon("Assets/Icons/Market1.png");
             market.setIcon(mkt);
             market.setHorizontalTextPosition(JButton.RIGHT);
 
@@ -62,7 +62,7 @@ import java.awt.*;
             Home.setForeground(Color.black);
             Home.setBackground(Color.cyan);
             Home.setBorder(BorderFactory.createEtchedBorder());
-            ImageIcon ho = new ImageIcon("Home.png");
+            ImageIcon ho = new ImageIcon("Assets/Icons/Home.png");
             Home.setIcon(ho);
             Home.setHorizontalTextPosition(JButton.RIGHT);
 
@@ -95,7 +95,6 @@ import java.awt.*;
             //  back.addActionListener((ActionListener) this);
           //  back.setText("Back");
             back.setFocusable(false);
-
             back.setBackground(Color.cyan);
             back.setBorder(BorderFactory.createEtchedBorder());
             ImageIcon backi = new ImageIcon("back.png");
@@ -108,10 +107,9 @@ import java.awt.*;
             //  next.addActionListener((ActionListener) this);
            // next.setText("Next");
             next.setFocusable(false);
-
             next.setBackground(Color.cyan);
             next.setBorder(BorderFactory.createEtchedBorder());
-            ImageIcon nexti = new ImageIcon("next.png");
+            ImageIcon nexti = new ImageIcon("Assets/Icons/next.png");
             next.setIcon(nexti);
 
             //button 7
@@ -123,7 +121,7 @@ import java.awt.*;
             s1.setForeground(Color.black);
             s1.setBackground(Color.lightGray);
             s1.setBorder(BorderFactory.createEtchedBorder());
-            ImageIcon nifty = new ImageIcon("nifty50.png");
+            ImageIcon nifty = new ImageIcon("Assets/Icons/nifty50.png");
             s1.setIcon(nifty);
            s1.setHorizontalTextPosition(JButton.RIGHT);
 
@@ -138,7 +136,7 @@ import java.awt.*;
             s2.setForeground(Color.black);
             s2.setBackground(Color.lightGray);
             s2.setBorder(BorderFactory.createEtchedBorder());
-            ImageIcon tata = new ImageIcon("tata.png");
+            ImageIcon tata = new ImageIcon("Assets/Icons/tata.png");
             s2.setIcon(tata);
             s2.setHorizontalTextPosition(JButton.RIGHT);
 
@@ -153,7 +151,7 @@ import java.awt.*;
             s3.setForeground(Color.black);
             s3.setBackground(Color.lightGray);
             s3.setBorder(BorderFactory.createEtchedBorder());
-            ImageIcon suzuki = new ImageIcon("Suzuki1.png");
+            ImageIcon suzuki = new ImageIcon("Assets/Icons/Suzuki1.png");
             s3.setIcon(suzuki);
             s3.setHorizontalTextPosition(JButton.RIGHT);
 
@@ -161,14 +159,14 @@ import java.awt.*;
             s4 = new JButton();
             s4.setBounds(20, 470, 500, 70);
             // withdraw.addActionListener((ActionListener) this);
-            s4.setText("      ITC                    +1.24%");
+            s4.setText("      ITC                      +1.24%");
             s4.setFocusable(false);
             s4.setFont(new Font("Comic Sans", Font.BOLD, 25));
 
             s4.setForeground(Color.black);
             s4.setBackground(Color.lightGray);
             s4.setBorder(BorderFactory.createEtchedBorder());
-            ImageIcon mrf = new ImageIcon("itc.jpg");
+            ImageIcon mrf = new ImageIcon("Assets/Icons/itc.jpg");
             s4.setIcon(mrf);
             s4.setHorizontalTextPosition(JButton.RIGHT);
 
