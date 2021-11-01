@@ -45,7 +45,7 @@ import java.awt.*;
             market.setForeground(Color.black);
             market.setBackground(Color.cyan);
             market.setBorder(BorderFactory.createEtchedBorder());
-            ImageIcon mkt = new ImageIcon("market.png");
+            ImageIcon mkt = new ImageIcon("Market1.png");
             market.setIcon(mkt);
             market.setHorizontalTextPosition(JButton.RIGHT);
 
@@ -93,23 +93,26 @@ import java.awt.*;
             back = new JButton();
             back.setBounds(10, 0, 50, 50);
             //  back.addActionListener((ActionListener) this);
-            back.setText("Back");
+          //  back.setText("Back");
             back.setFocusable(false);
-            back.setFont(new Font("Comic Sans", Font.BOLD, 15));
-            back.setForeground(Color.black);
+
             back.setBackground(Color.cyan);
             back.setBorder(BorderFactory.createEtchedBorder());
+            ImageIcon backi = new ImageIcon("back.png");
+            back.setIcon(backi);
+            //s1.setHorizontalTextPosition(JButton.RIGHT);
 
             //button 6
             next = new JButton();
             next.setBounds(80, 0, 50, 50);
             //  next.addActionListener((ActionListener) this);
-            next.setText("Next");
+           // next.setText("Next");
             next.setFocusable(false);
-            next.setFont(new Font("Comic Sans", Font.BOLD, 15));
-            next.setForeground(Color.black);
+
             next.setBackground(Color.cyan);
             next.setBorder(BorderFactory.createEtchedBorder());
+            ImageIcon nexti = new ImageIcon("next.png");
+            next.setIcon(nexti);
 
             //button 7
             s1 = new JButton();
@@ -129,7 +132,7 @@ import java.awt.*;
             //button 8
             s2 = new JButton();
             s2.setBounds(20, 310, 500, 70);
-            s2.setText("  Tata Motors         +0.7%");
+            s2.setText("  Tata Motors        +0.70%");
             s2.setFocusable(false);
             s2.setFont(new Font("Comic Sans", Font.BOLD, 25));
             s2.setForeground(Color.black);
@@ -144,13 +147,13 @@ import java.awt.*;
             s3 = new JButton();
             s3.setBounds(20, 390, 500, 70);
             // withdraw.addActionListener((ActionListener) this);
-            s3.setText("      Suzuki                    +1.14%");
+            s3.setText("          Suzuki                +1.14%");
             s3.setFocusable(false);
             s3.setFont(new Font("Comic Sans", Font.BOLD, 25));
             s3.setForeground(Color.black);
             s3.setBackground(Color.lightGray);
             s3.setBorder(BorderFactory.createEtchedBorder());
-            ImageIcon suzuki = new ImageIcon("Suzuki.png");
+            ImageIcon suzuki = new ImageIcon("Suzuki1.png");
             s3.setIcon(suzuki);
             s3.setHorizontalTextPosition(JButton.RIGHT);
 
@@ -158,14 +161,14 @@ import java.awt.*;
             s4 = new JButton();
             s4.setBounds(20, 470, 500, 70);
             // withdraw.addActionListener((ActionListener) this);
-            s4.setText("MRF           +1.24%");
+            s4.setText("      ITC                    +1.24%");
             s4.setFocusable(false);
             s4.setFont(new Font("Comic Sans", Font.BOLD, 25));
 
             s4.setForeground(Color.black);
             s4.setBackground(Color.lightGray);
             s4.setBorder(BorderFactory.createEtchedBorder());
-            ImageIcon mrf = new ImageIcon("mrf.png");
+            ImageIcon mrf = new ImageIcon("itc.jpg");
             s4.setIcon(mrf);
             s4.setHorizontalTextPosition(JButton.RIGHT);
 
