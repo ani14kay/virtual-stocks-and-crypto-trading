@@ -67,27 +67,27 @@ import java.awt.*;
             Home.setHorizontalTextPosition(JButton.RIGHT);
 
 
-            //button 4
-            deposit = new JButton();
-            deposit.setBounds(280, 100, 180, 70);
-            //deposit.addActionListener((ActionListener) this);
-            deposit.setText("Deposit INR");
-            deposit.setFocusable(false);
-            deposit.setFont(new Font("Comic Sans", Font.BOLD, 25));
-            deposit.setForeground(Color.white);
-            deposit.setBackground(Color.blue);
-            deposit.setBorder(BorderFactory.createEtchedBorder());
+            // //button 4
+            // deposit = new JButton();
+            // deposit.setBounds(280, 100, 180, 70);
+            // //deposit.addActionListener((ActionListener) this);
+            // deposit.setText("Deposit INR");
+            // deposit.setFocusable(false);
+            // deposit.setFont(new Font("Comic Sans", Font.BOLD, 25));
+            // deposit.setForeground(Color.white);
+            // deposit.setBackground(Color.blue);
+            // deposit.setBorder(BorderFactory.createEtchedBorder());
 
-            //button 4
-            withdraw = new JButton();
-            withdraw.setBounds(800, 100, 180, 70);
-            // withdraw.addActionListener((ActionListener) this);
-            withdraw.setText("Withdraw INR");
-            withdraw.setFocusable(false);
-            withdraw.setFont(new Font("Comic Sans", Font.BOLD, 25));
-            withdraw.setForeground(Color.black);
-            withdraw.setBackground(Color.white);
-            withdraw.setBorder(BorderFactory.createEtchedBorder());
+            // //button 4
+            // withdraw = new JButton();
+            // withdraw.setBounds(800, 100, 180, 70);
+            // // withdraw.addActionListener((ActionListener) this);
+            // withdraw.setText("Withdraw INR");
+            // withdraw.setFocusable(false);
+            // withdraw.setFont(new Font("Comic Sans", Font.BOLD, 25));
+            // withdraw.setForeground(Color.black);
+            // withdraw.setBackground(Color.white);
+            // withdraw.setBorder(BorderFactory.createEtchedBorder());
 
             //button 5
             back = new JButton();
@@ -237,8 +237,8 @@ import java.awt.*;
             this.add(Home);
             this.add(back);
             this.add(next);
-            this.add(deposit);
-            this.add(withdraw);
+            // this.add(deposit);
+            // this.add(withdraw);
             this.add(s1);
             this.add(s2);
             this.add(s3);
