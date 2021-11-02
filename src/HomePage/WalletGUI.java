@@ -5,23 +5,18 @@ import java.awt.*;
 import javax.swing.BorderFactory;
 
 import javax.swing.JPanel;
-import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.border.TitledBorder;
+
 
 public class WalletGUI extends JPanel {
     JButton withdraw_funds, deposit_funds, Home, deposit, withdraw, back, next, s1, s2, s3, s4;
     JButton i1, i2, i3, i4;
-    JLabel heading, Current_Balance, Last_Transcation;
+    JLabel heading, Current_Balance, Last_Transcation,Recent_Activity;
     JPanel top, bottom, center, grid;
     JTable table;
 
     WalletGUI() {
-
-        ImageIcon emptyError = new ImageIcon("Assets/Images/wallet.jpg");
-            Image i = emptyError.getImage();
-            Image resideImage = i.getScaledInstance(300,300,Image.SCALE_SMOOTH);
-            emptyError = new ImageIcon(resideImage);
+ 
 
         // top heading
         
@@ -47,6 +42,13 @@ public class WalletGUI extends JPanel {
         Last_Transcation.setFont(new Font("Verdana", Font.BOLD, 25));
         Last_Transcation.setBackground(Color.BLACK);
         Last_Transcation.setOpaque(true);
+
+        Recent_Activity = new JLabel("Recent Activities : ", SwingConstants.CENTER);
+        Recent_Activity.setBounds(100, 330, 400, 50);
+        Recent_Activity.setForeground(Color.WHITE);
+        Recent_Activity.setFont(new Font("Verdana", Font.BOLD, 25));
+        Recent_Activity.setBackground(Color.BLACK);
+        Recent_Activity.setOpaque(true);
 
         // BUTTON 1
         withdraw_funds = new JButton();
@@ -114,6 +116,7 @@ public class WalletGUI extends JPanel {
 
         this.add(withdraw_funds);
         this.add(deposit_funds);
+        this.add(Recent_Activity);
         this.add(Current_Balance);
         this.add(Last_Transcation);
 
