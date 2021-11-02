@@ -64,7 +64,7 @@ public class HomePageGUI extends JFrame {
 
         this.add(helpAndSupportGUI);
         SideMenu.helpAndSupport.addActionListener(e -> {
-            helpAndSupportGUI.setBackground(new Color(255, 00, 00));
+           
             SideMenu.profile.setForeground(new Color(164, 164, 166));
             SideMenu.helpAndSupport.setForeground(new Color(18, 30, 255));
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));
