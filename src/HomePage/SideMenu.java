@@ -137,6 +137,9 @@ public class SideMenu extends JPanel {
         logIn.setFocusPainted(false);
         logIn.setForeground(new Color(255, 255, 255));
         logIn.setText("LogIn");
+        logIn.addActionListener(e -> {
+            LoginPage loginpage = new LoginPage();
+        });
         this.add(logIn);
 
         JButton signUp = new JButton();
