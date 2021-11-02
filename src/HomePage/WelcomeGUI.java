@@ -6,9 +6,19 @@ import java.awt.*;
 public class WelcomeGUI extends JPanel {
     WelcomeGUI(){
         //attributes of welcome page are set
+        HomePageGUI.profileGUI.setVisible(false);
+        HomePageGUI.helpAndSupportGUI.setVisible(false);
+        HomePageGUI.portfolioGUI.setVisible(false);
+        HomePageGUI.investingGUI.setVisible(false);
+        HomePageGUI.walletGUI.setVisible(false);
+        HomePageGUI.intradayGUI.setVisible(false);
+        HomePageGUI.newsAndArticlesGUI.setVisible(false);
+        HomePageGUI.portfolioCryptoGUI.setVisible(false);
+        HomePageGUI.investingCryptoGUI.setVisible(false);
+        HomePageGUI.newsAndArticlesCryptoGUI.setVisible(false);
         this.setBackground(new Color(250,250,255));
         this.setBounds(300,150,1200,600);
-        //all the required lables are added to the panel
+        //all the required labels are added to the panel
         JLabel welcomeText = new JLabel("<html><u>Welcome to the World of Stock and crypto</u></html>");
         JLabel tagLine = new JLabel("A platform where you can invest some money on stock market or on crypto currency");
         JLabel description1 = new JLabel("<html><br/><br/>A <b>stock market</b>, equity market, or share market is the aggregation of buyers and sellers of stocks (also called shares) which represent ownership claims on businesses; these may include<br/> " +
@@ -67,7 +77,7 @@ public class WelcomeGUI extends JPanel {
             SideMenu.investingCrypto.setForeground(new Color(164, 164, 166));
             SideMenu.newsAndArticlesCrypto.setForeground(new Color(164, 164, 166));
         });
-        //everyt6hing is added to the panel
+        //everything is added to the panel
         this.add(welcomeText);
         this.add(tagLine);
         this.add(description1);
