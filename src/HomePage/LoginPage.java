@@ -10,10 +10,10 @@ import javax.swing.*;
 public class LoginPage extends JFrame {
     LoginPage(){
                 // Creating instance of JFrame
-                JFrame frame = new JFrame("My First Swing Example");
+                JFrame frame = new JFrame("Login Page");
                 // Setting the width and height of frame
                 frame.setSize(350, 200);
-                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.setLocationRelativeTo(null);
 
                 /* Creating panel. This is same as a div tag in HTML
                  * We can create several panels and add them to specific
@@ -73,7 +73,9 @@ public class LoginPage extends JFrame {
 
                 // Creating login button
                 JButton loginButton = new JButton("login");
-                loginButton.setBounds(10, 80, 80, 25);
+                loginButton.setBounds(130, 80, 80, 25);
+                loginButton.setFocusable(false);
+
                 panel.add(loginButton);
             }
 
