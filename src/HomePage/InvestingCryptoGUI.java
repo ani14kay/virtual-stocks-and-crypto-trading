@@ -1,10 +1,7 @@
 package HomePage;
-
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-
 import javax.swing.table.*;
 
 
@@ -16,6 +13,8 @@ public class InvestingCryptoGUI extends JPanel {
         this.setBackground(new Color(250, 250, 255));
         this.setBounds(300, 150, 1200, 600);
         this.setVisible(true);
+        JButton f = new JButton();
+        f.setVisible(true);
 
 
         // Creating data set for table
@@ -39,19 +38,15 @@ public class InvestingCryptoGUI extends JPanel {
 
         jt.setPreferredScrollableViewportSize(new Dimension(1170,570));
         jt.setFillsViewportHeight(true);
-// add it to the JScrollPane
+        // add it to the JScrollPane
         JScrollPane jsp = new JScrollPane(jt);
         this.add(jsp);
 
         // Adding jbutton to columns
 
-
-
-
-
     }
 
-    class ButtonRenderer extends JButton implements TableCellRenderer
+    class ButtonRenderer/* */ extends JButton implements TableCellRenderer
     {
         public ButtonRenderer() {
             //set button properties
@@ -86,9 +81,6 @@ public class InvestingCryptoGUI extends JPanel {
                 }
             });
 
-
-
-
         }
 
 
@@ -100,6 +92,7 @@ public class InvestingCryptoGUI extends JPanel {
             clicked = true;
             return btn;
         }
+
         public Object getCellEditorValue()
         {
            if(clicked){
@@ -110,6 +103,7 @@ public class InvestingCryptoGUI extends JPanel {
            return new String(label);
         }
 
+
         public boolean stopCellEditing(){
             clicked=false;
             return super.stopCellEditing();
@@ -119,12 +113,6 @@ public class InvestingCryptoGUI extends JPanel {
             super.fireEditingStopped();
         }
     }
-    public static void main(String args[])
-    {
-        JButton f = new JButton();
-        f.setVisible(true);
-    }
 
-
-    }
+}
 
