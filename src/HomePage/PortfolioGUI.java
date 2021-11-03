@@ -97,7 +97,7 @@ public class PortfolioGUI extends JPanel {
         back.setFocusable(false);
         back.setBackground(Color.cyan);
         back.setBorder(BorderFactory.createEtchedBorder());
-        ImageIcon backi = new ImageIcon("back.png");
+        ImageIcon backi = new ImageIcon("Assets/Icons/back.png");
         back.setIcon(backi);
         //s1.setHorizontalTextPosition(JButton.RIGHT);
 
