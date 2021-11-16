@@ -14,6 +14,7 @@ public class ProfileGUI extends JPanel {
         JLabel phoneNo = new JLabel("Phone no. : +918976543210");
         JLabel email = new JLabel("E-mail : ");
         JLabel subDivider = new JLabel("");
+        JLabel activity = new JLabel("Last 5 Activities : ");
 
         welcome.setBounds(0,0,500,40);
         welcome.setFont(new Font("Copperplate Gothic Bold",Font.ROMAN_BASELINE,30));
@@ -58,6 +59,11 @@ public class ProfileGUI extends JPanel {
         subDivider.setBackground(new Color(134, 134, 135));
         subDivider.setOpaque(true);
 
+        activity.setBounds(20,400,200,20);
+        activity.setFont(new Font("Calibri",Font.BOLD,15));
+        activity.setVerticalAlignment(JLabel.TOP);
+
+        this.add(activity);
         this.add(subDivider);
         this.add(email);
         this.add(phoneNo);

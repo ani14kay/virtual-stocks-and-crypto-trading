@@ -118,7 +118,7 @@ public class HomePageGUI extends JFrame {
 
         this.add(investingGUI);
         SideMenu.investing.addActionListener(e -> {
-            investingGUI.setBackground(new Color(255,00,165));
+
             SideMenu.profile.setForeground(new Color(164, 164, 166));
             SideMenu.helpAndSupport.setForeground(new Color(164, 164, 166));
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));
@@ -280,7 +280,7 @@ public class HomePageGUI extends JFrame {
 
         this.add(newsAndArticlesCryptoGUI);
         SideMenu.newsAndArticlesCrypto.addActionListener(e -> {
-            newsAndArticlesCryptoGUI.setBackground(new Color(0, 255, 166));
+
             SideMenu.profile.setForeground(new Color(164, 164, 166));
             SideMenu.helpAndSupport.setForeground(new Color(164, 164, 166));
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));
