@@ -10,7 +10,6 @@ public class HomePageGUI extends JFrame {
     public static PortfolioGUI portfolioGUI = new PortfolioGUI();
     public static InvestingGUI investingGUI = new InvestingGUI();
     public static WalletGUI walletGUI = new WalletGUI();
-    public static IntradayGUI intradayGUI = new IntradayGUI();
     public static NewsAndArticlesGUI newsAndArticlesGUI = new NewsAndArticlesGUI();
     public static PortfolioCryptoGUI portfolioCryptoGUI = new PortfolioCryptoGUI();
     public static InvestingCryptoGUI investingCryptoGUI = new InvestingCryptoGUI();
@@ -43,7 +42,6 @@ public class HomePageGUI extends JFrame {
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));
             SideMenu.investing.setForeground(new Color(164, 164, 166));
             SideMenu.wallet.setForeground(new Color(164, 164, 166));
-            SideMenu.intraday.setForeground(new Color(164, 164, 166));
             SideMenu.newsAndArticles.setForeground(new Color(164, 164, 166));
             SideMenu.portfolioCrypto.setForeground(new Color(164, 164, 166));
             SideMenu.investingCrypto.setForeground(new Color(164, 164, 166));
@@ -54,7 +52,6 @@ public class HomePageGUI extends JFrame {
             portfolioGUI.setVisible(false);
             investingGUI.setVisible(false);
             walletGUI.setVisible(false);
-            intradayGUI.setVisible(false);
             newsAndArticlesGUI.setVisible(false);
             portfolioCryptoGUI.setVisible(false);
             investingCryptoGUI.setVisible(false);
@@ -70,7 +67,6 @@ public class HomePageGUI extends JFrame {
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));
             SideMenu.investing.setForeground(new Color(164, 164, 166));
             SideMenu.wallet.setForeground(new Color(164, 164, 166));
-            SideMenu.intraday.setForeground(new Color(164, 164, 166));
             SideMenu.newsAndArticles.setForeground(new Color(164, 164, 166));
             SideMenu.portfolioCrypto.setForeground(new Color(164, 164, 166));
             SideMenu.investingCrypto.setForeground(new Color(164, 164, 166));
@@ -81,7 +77,6 @@ public class HomePageGUI extends JFrame {
             portfolioGUI.setVisible(false);
             investingGUI.setVisible(false);
             walletGUI.setVisible(false);
-            intradayGUI.setVisible(false);
             newsAndArticlesGUI.setVisible(false);
             portfolioCryptoGUI.setVisible(false);
             investingCryptoGUI.setVisible(false);
@@ -97,7 +92,6 @@ public class HomePageGUI extends JFrame {
             SideMenu.portfolio.setForeground(new Color(18, 30, 255));
             SideMenu.investing.setForeground(new Color(164, 164, 166));
             SideMenu.wallet.setForeground(new Color(164, 164, 166));
-            SideMenu.intraday.setForeground(new Color(164, 164, 166));
             SideMenu.newsAndArticles.setForeground(new Color(164, 164, 166));
             SideMenu.portfolioCrypto.setForeground(new Color(164, 164, 166));
             SideMenu.investingCrypto.setForeground(new Color(164, 164, 166));
@@ -108,7 +102,6 @@ public class HomePageGUI extends JFrame {
             portfolioGUI.setVisible(true);
             investingGUI.setVisible(false);
             walletGUI.setVisible(false);
-            intradayGUI.setVisible(false);
             newsAndArticlesGUI.setVisible(false);
             portfolioCryptoGUI.setVisible(false);
             investingCryptoGUI.setVisible(false);
@@ -124,7 +117,6 @@ public class HomePageGUI extends JFrame {
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));
             SideMenu.investing.setForeground(new Color(18, 30, 255));
             SideMenu.wallet.setForeground(new Color(164, 164, 166));
-            SideMenu.intraday.setForeground(new Color(164, 164, 166));
             SideMenu.newsAndArticles.setForeground(new Color(164, 164, 166));
             SideMenu.portfolioCrypto.setForeground(new Color(164, 164, 166));
             SideMenu.investingCrypto.setForeground(new Color(164, 164, 166));
@@ -135,7 +127,6 @@ public class HomePageGUI extends JFrame {
             portfolioGUI.setVisible(false);
             investingGUI.setVisible(true);
             walletGUI.setVisible(false);
-            intradayGUI.setVisible(false);
             newsAndArticlesGUI.setVisible(false);
             portfolioCryptoGUI.setVisible(false);
             investingCryptoGUI.setVisible(false);
@@ -151,7 +142,6 @@ public class HomePageGUI extends JFrame {
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));
             SideMenu.investing.setForeground(new Color(164, 164, 166));
             SideMenu.wallet.setForeground(new Color(18, 30, 255));
-            SideMenu.intraday.setForeground(new Color(164, 164, 166));
             SideMenu.newsAndArticles.setForeground(new Color(164, 164, 166));
             SideMenu.portfolioCrypto.setForeground(new Color(164, 164, 166));
             SideMenu.investingCrypto.setForeground(new Color(164, 164, 166));
@@ -162,7 +152,6 @@ public class HomePageGUI extends JFrame {
             portfolioGUI.setVisible(false);
             investingGUI.setVisible(false);
             walletGUI.setVisible(true);
-            intradayGUI.setVisible(false);
             newsAndArticlesGUI.setVisible(false);
             portfolioCryptoGUI.setVisible(false);
             investingCryptoGUI.setVisible(false);
@@ -170,32 +159,7 @@ public class HomePageGUI extends JFrame {
 
         });
 
-        this.add(intradayGUI);
-        SideMenu.intraday.addActionListener(e -> {
 
-            SideMenu.profile.setForeground(new Color(164, 164, 166));
-            SideMenu.helpAndSupport.setForeground(new Color(164, 164, 166));
-            SideMenu.portfolio.setForeground(new Color(164, 164, 166));
-            SideMenu.investing.setForeground(new Color(164, 164, 166));
-            SideMenu.wallet.setForeground(new Color(164, 164, 166));
-            SideMenu.intraday.setForeground(new Color(18, 30, 255));
-            SideMenu.newsAndArticles.setForeground(new Color(164, 164, 166));
-            SideMenu.portfolioCrypto.setForeground(new Color(164, 164, 166));
-            SideMenu.investingCrypto.setForeground(new Color(164, 164, 166));
-            SideMenu.newsAndArticlesCrypto.setForeground(new Color(164, 164, 166));
-            welcomeGUI.setVisible(false);
-            profileGUI.setVisible(false);
-            helpAndSupportGUI.setVisible(false);
-            portfolioGUI.setVisible(false);
-            investingGUI.setVisible(false);
-            walletGUI.setVisible(false);
-            intradayGUI.setVisible(true);
-            newsAndArticlesGUI.setVisible(false);
-            portfolioCryptoGUI.setVisible(false);
-            investingCryptoGUI.setVisible(false);
-            newsAndArticlesCryptoGUI.setVisible(false);
-
-        });
 
         
         this.add(newsAndArticlesGUI);
@@ -206,7 +170,6 @@ public class HomePageGUI extends JFrame {
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));
             SideMenu.investing.setForeground(new Color(164, 164, 166));
             SideMenu.wallet.setForeground(new Color(164, 164, 166));
-            SideMenu.intraday.setForeground(new Color(164, 164, 166));
             SideMenu.newsAndArticles.setForeground(new Color(18, 30, 255));
             SideMenu.portfolioCrypto.setForeground(new Color(164, 164, 166));
             SideMenu.investingCrypto.setForeground(new Color(164, 164, 166));
@@ -217,7 +180,6 @@ public class HomePageGUI extends JFrame {
             portfolioGUI.setVisible(false);
             investingGUI.setVisible(false);
             walletGUI.setVisible(false);
-            intradayGUI.setVisible(false);
             newsAndArticlesGUI.setVisible(true);
             portfolioCryptoGUI.setVisible(false);
             investingCryptoGUI.setVisible(false);
@@ -232,7 +194,6 @@ public class HomePageGUI extends JFrame {
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));
             SideMenu.investing.setForeground(new Color(164, 164, 166));
             SideMenu.wallet.setForeground(new Color(164, 164, 166));
-            SideMenu.intraday.setForeground(new Color(164, 164, 166));
             SideMenu.newsAndArticles.setForeground(new Color(164, 164, 166));
             SideMenu.portfolioCrypto.setForeground(new Color(18, 30, 255));
             SideMenu.investingCrypto.setForeground(new Color(164, 164, 166));
@@ -243,7 +204,6 @@ public class HomePageGUI extends JFrame {
             portfolioGUI.setVisible(false);
             investingGUI.setVisible(false);
             walletGUI.setVisible(false);
-            intradayGUI.setVisible(false);
             newsAndArticlesGUI.setVisible(false);
             portfolioCryptoGUI.setVisible(true);
             investingCryptoGUI.setVisible(false);
@@ -259,7 +219,6 @@ public class HomePageGUI extends JFrame {
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));
             SideMenu.investing.setForeground(new Color(164, 164, 166));
             SideMenu.wallet.setForeground(new Color(164, 164, 166));
-            SideMenu.intraday.setForeground(new Color(164, 164, 166));
             SideMenu.newsAndArticles.setForeground(new Color(164, 164, 166));
             SideMenu.portfolioCrypto.setForeground(new Color(164, 164, 166));
             SideMenu.investingCrypto.setForeground(new Color(18, 30, 255));
@@ -270,7 +229,6 @@ public class HomePageGUI extends JFrame {
             portfolioGUI.setVisible(false);
             investingGUI.setVisible(false);
             walletGUI.setVisible(false);
-            intradayGUI.setVisible(false);
             newsAndArticlesGUI.setVisible(false);
             portfolioCryptoGUI.setVisible(false);
             investingCryptoGUI.setVisible(true);
@@ -286,7 +244,6 @@ public class HomePageGUI extends JFrame {
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));
             SideMenu.investing.setForeground(new Color(164, 164, 166));
             SideMenu.wallet.setForeground(new Color(164, 164, 166));
-            SideMenu.intraday.setForeground(new Color(164, 164, 166));
             SideMenu.newsAndArticles.setForeground(new Color(164, 164, 166));
             SideMenu.portfolioCrypto.setForeground(new Color(164, 164, 166));
             SideMenu.investingCrypto.setForeground(new Color(164, 164, 166));
@@ -297,7 +254,6 @@ public class HomePageGUI extends JFrame {
             portfolioGUI.setVisible(false);
             investingGUI.setVisible(false);
             walletGUI.setVisible(false);
-            intradayGUI.setVisible(false);
             newsAndArticlesGUI.setVisible(false);
             portfolioCryptoGUI.setVisible(false);
             investingCryptoGUI.setVisible(false);
