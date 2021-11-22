@@ -11,7 +11,6 @@ public class WelcomeGUI extends JPanel {
         HomePageGUI.portfolioGUI.setVisible(false);
         HomePageGUI.investingGUI.setVisible(false);
         HomePageGUI.walletGUI.setVisible(false);
-        HomePageGUI.intradayGUI.setVisible(false);
         HomePageGUI.newsAndArticlesGUI.setVisible(false);
         HomePageGUI.portfolioCryptoGUI.setVisible(false);
         HomePageGUI.investingCryptoGUI.setVisible(false);
@@ -71,7 +70,6 @@ public class WelcomeGUI extends JPanel {
             SideMenu.portfolio.setForeground(new Color(164, 164, 166));
             SideMenu.investing.setForeground(new Color(164, 164, 166));
             SideMenu.wallet.setForeground(new Color(164, 164, 166));
-            SideMenu.intraday.setForeground(new Color(164, 164, 166));
             SideMenu.newsAndArticles.setForeground(new Color(164, 164, 166));
             SideMenu.portfolioCrypto.setForeground(new Color(164, 164, 166));
             SideMenu.investingCrypto.setForeground(new Color(164, 164, 166));

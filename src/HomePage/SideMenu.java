@@ -5,7 +5,7 @@ import java.awt.*;
 
 
 public class SideMenu extends JPanel {
-    static JButton profile,helpAndSupport,portfolio,investing,wallet,intraday,newsAndArticles,portfolioCrypto,investingCrypto,newsAndArticlesCrypto;
+    static JButton profile,helpAndSupport,portfolio,investing,wallet,newsAndArticles,portfolioCrypto,investingCrypto,newsAndArticlesCrypto;
     SideMenu(){
         this.setBackground(new Color(217,218,222));//side menu BG
         this.setBounds(0,0,275,1080);// side menu bounds set
@@ -73,19 +73,11 @@ public class SideMenu extends JPanel {
         wallet.setText("Wallet");
         this.add(wallet);
 
-        intraday = new JButton();
-        intraday.setBackground(new Color(217,218,222));
-        intraday.setBounds(50,335,150,30);
-        intraday.setBorder(null);
-        intraday.setFont(new Font("MV Boli",Font.BOLD,15));
-        intraday.setFocusPainted(false);
-        intraday.setForeground(new Color(164, 164, 166));
-        intraday.setText("Intraday");
-        this.add(intraday);
+
 
         newsAndArticles = new JButton();
         newsAndArticles.setBackground(new Color(217,218,222));
-        newsAndArticles.setBounds(50,375,150,30);
+        newsAndArticles.setBounds(50,335,150,30);
         newsAndArticles.setBorder(null);
         newsAndArticles.setFont(new Font("MV Boli",Font.BOLD,15));
         newsAndArticles.setFocusPainted(false);
@@ -96,12 +88,12 @@ public class SideMenu extends JPanel {
         JLabel crypto = new JLabel("Crypto");//Crypto text
         crypto.setForeground(new Color(100,101,105));
         crypto.setFont(new Font("Comic sans",Font.BOLD,15));
-        crypto.setBounds(50,435,100,20);
+        crypto.setBounds(50,395,100,20);
         this.add(crypto);
 
         portfolioCrypto = new JButton();
         portfolioCrypto.setBackground(new Color(217,218,222));
-        portfolioCrypto.setBounds(50,475,150,30);
+        portfolioCrypto.setBounds(50,435,150,30);
         portfolioCrypto.setBorder(null);
         portfolioCrypto.setFont(new Font("MV Boli",Font.BOLD,15));
         portfolioCrypto.setFocusPainted(false);
@@ -111,7 +103,7 @@ public class SideMenu extends JPanel {
 
         investingCrypto = new JButton();
         investingCrypto.setBackground(new Color(217,218,222));
-        investingCrypto.setBounds(50,515,150,30);
+        investingCrypto.setBounds(50,475,150,30);
         investingCrypto.setBorder(null);
         investingCrypto.setFont(new Font("MV Boli",Font.BOLD,15));
         investingCrypto.setFocusPainted(false);
@@ -121,7 +113,7 @@ public class SideMenu extends JPanel {
 
         newsAndArticlesCrypto = new JButton();
         newsAndArticlesCrypto.setBackground(new Color(217,218,222));
-        newsAndArticlesCrypto.setBounds(50,555,150,30);
+        newsAndArticlesCrypto.setBounds(50,515,150,30);
         newsAndArticlesCrypto.setBorder(null);
         newsAndArticlesCrypto.setFont(new Font("MV Boli",Font.BOLD,15));
         newsAndArticlesCrypto.setFocusPainted(false);
