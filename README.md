@@ -9,7 +9,7 @@
 This project is part of our semester assessment process.
 This course will cover all of the essential concepts of object-oriented programming.
 
-We'll be using Java to cover all the fundamental OOP concepts.
+We'll be using Java to cover all the fundamental OOP concepts and algorithms.
 ```
 ## About the project :
 ```
