@@ -1,4 +1,6 @@
 import java.io.IOException;
+import org.json.JSONException;
+
 
 public class account {
     private String userId;
@@ -46,7 +48,7 @@ public class account {
 	public String getUserName() {
 		return this.userName;
 	}
-	public double getBalance() {
+	public double getBalance() throws JSONException{
 		return this.balance;
 	}
 
