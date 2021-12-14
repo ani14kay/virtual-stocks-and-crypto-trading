@@ -2,6 +2,7 @@ package GUI;
 import javax.swing.*;
 
 public class LoginPage extends JFrame {
+    static String exampleUser = "hims6482",examplePass = "Himanshu1@";
     LoginPage(){
                 JFrame frame = new JFrame("Login Page");
                 frame.setSize(350, 200);
@@ -44,6 +45,15 @@ public class LoginPage extends JFrame {
                 JButton loginButton = new JButton("login");
                 loginButton.setBounds(130, 80, 80, 25);
                 loginButton.setFocusable(false);
+                loginButton.addActionListener(e -> {
+                    if(exampleUser.equals(userText.getText()) && String.valueOf(passwordText.getPassword()).equals(examplePass)){
+                        JOptionPane.showMessageDialog(null,"Welcome User");
+                    }else{
+                        JOptionPane.showMessageDialog(null,"Invalid User name and Password");
+                        userText.setText("");
+                        passwordText.setText("");
+                    }
+                });
 
                 panel.add(loginButton);
             }
