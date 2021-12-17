@@ -26,7 +26,7 @@ We'll be using Java to cover all the fundamental OOP concepts and algorithms.
 - ADARSH SHUKLA (202051008)
 - HIMANSHU KUMAR VERMA (202052317)
 - KALASH SINGH JADOUN (202051097)
-- MUGDHA SHARMA (202052325)
+- MUGDHA SHARMA (202051214)
 
 ### Contents
 ```
