@@ -2,11 +2,16 @@ package GUI;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.HashMap;
+import java.util.HashSet;
+
+import Data.*;
 
 public class ProfileGUI extends JPanel {
+    String user = "Himanshu";
     ProfileGUI(){
-        JLabel welcome = new JLabel("Welcome User!!");
-        JLabel userName = new JLabel("                UserName");
+        JLabel welcome = new JLabel("Welcome " + user);
+        JLabel userName = new JLabel("                " + user);
         JLabel about = new JLabel("About");
         JLabel description = new JLabel("<html>Description : Here user will define himself in a brief description</html>");
         JLabel divider = new JLabel("");

@@ -3,53 +3,85 @@ package Data;
 import java.io.IOException;
 
 public class Account {
-    private String userId;
 	private String userName;
 	private String password;
+	private String dobDate,dobMonth,dobYear;
+	private String contact;
+	private String email;
 	private double balance;
 
-    public String generateId() {
-		final String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-		String s="";
-		for(int i=0;i<4;i++) {
-			int num=(int)(Math.random()*62);
-			char ch=AB.charAt(num);
-			s+=ch;
-		}
-		return  s;
-	}
-    public String getPassword() {
-		return password;
-	}
-	public Account(String userName, String password, double balance) {
-		this.userId=generateId();
-		this.userName=userName;
-		this.password=password;
-		this.balance=balance;//For sign-up
-	}
-	public Account(String userId, String password) {
-		this.userId=userId;
-		this.userName="";
-		this.password=password;
-		this.balance=0;//For login
-	}
-	public Account(String userId, String userName, String password, double balance) {
-		this.userId=userId;
-		this.userName=userName;
-		this.password=password;
-		this.balance=balance;
-	}
-	public Account(String userId){
-		this.userId = userId;
-	}
-	public String getUserId() {
-		return this.userId;
-	}
-	public String getUserName() {
-		return this.userName;
-	}
-	public double getBalance() {
-		return this.balance;
+	public Account(String userName, String password, String dobDate, String dobMonth, String dobYear, String contact, String email, double balance) {
+		this.userName = userName;
+		this.password = password;
+		this.dobDate = dobDate;
+		this.dobMonth = dobMonth;
+		this.dobYear = dobYear;
+		this.contact = contact;
+		this.email = email;
+		this.balance = balance;
 	}
 
+	public String getUserName() {
+		return userName;
+	}
+
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getDobDate() {
+		return dobDate;
+	}
+
+	public void setDobDate(String dobDate) {
+		this.dobDate = dobDate;
+	}
+
+	public String getDobMonth() {
+		return dobMonth;
+	}
+
+	public void setDobMonth(String dobMonth) {
+		this.dobMonth = dobMonth;
+	}
+
+	public String getDobYear() {
+		return dobYear;
+	}
+
+	public void setDobYear(String dobYear) {
+		this.dobYear = dobYear;
+	}
+
+	public String getContact() {
+		return contact;
+	}
+
+	public void setContact(String contact) {
+		this.contact = contact;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
 }
