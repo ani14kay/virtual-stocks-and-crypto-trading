@@ -130,7 +130,7 @@ public class SideMenu extends JPanel {
         logIn.setForeground(new Color(255, 255, 255));
         logIn.setText("LogIn");
         logIn.addActionListener(e -> {
-            LoginPage loginpage = new LoginPage();
+            new LoginPage();
         });
         this.add(logIn);
 
@@ -142,6 +142,9 @@ public class SideMenu extends JPanel {
         signUp.setFocusPainted(false);
         signUp.setForeground(new Color(255, 255, 255));
         signUp.setText("SignUp");
+        signUp.addActionListener(e -> {
+            new SignUpPage();
+        });
         this.add(signUp);
 
         this.setLayout(null);// side menu layout is null

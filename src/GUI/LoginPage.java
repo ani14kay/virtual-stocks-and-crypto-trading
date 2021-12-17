@@ -1,10 +1,16 @@
 package GUI;
+import Data.Account;
+
 import javax.swing.*;
+import java.awt.*;
+import java.util.HashMap;
 
 public class LoginPage extends JFrame {
-    static String exampleUser = "hims6482",examplePass = "Himanshu1@";
+    static HashMap<String,String> data = new HashMap<>();
+    static JFrame frame;
+
     LoginPage(){
-                JFrame frame = new JFrame("Login Page");
+                frame = new JFrame("Login Page");
                 frame.setSize(350, 200);
                 frame.setLocationRelativeTo(null);
                 JPanel panel = new JPanel();
@@ -46,10 +52,16 @@ public class LoginPage extends JFrame {
                 loginButton.setBounds(130, 80, 80, 25);
                 loginButton.setFocusable(false);
                 loginButton.addActionListener(e -> {
-                    if(exampleUser.equals(userText.getText()) && String.valueOf(passwordText.getPassword()).equals(examplePass)){
-                        JOptionPane.showMessageDialog(null,"Welcome User");
+                    if(data.containsKey(userText.getText())){
+                        if(String.valueOf(passwordText.getPassword()).equals(data.get(userText.getText()))){
+                            JOptionPane.showMessageDialog(null,"Welcome User");
+                            frame.dispose();
+                        }else{
+                            JOptionPane.showMessageDialog(null,"Incorrect Password");
+                            passwordText.setText("");
+                        }
                     }else{
-                        JOptionPane.showMessageDialog(null,"Invalid User name and Password");
+                        JOptionPane.showMessageDialog(null,"Invalid username or password");
                         userText.setText("");
                         passwordText.setText("");
                     }
