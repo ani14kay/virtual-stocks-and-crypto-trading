@@ -63,7 +63,7 @@ public class WelcomeGUI extends JPanel {
             ProfileGUI profileGUI = new ProfileGUI();
             //welcome page gone, profile page is visible now
             this.setVisible(false);
-            profileGUI.setVisible(true);
+            HomePageGUI.profileGUI.setVisible(true);
             //profile button activated
             SideMenu.profile.setForeground(new Color(18, 30, 255));
             SideMenu.helpAndSupport.setForeground(new Color(164, 164, 166));

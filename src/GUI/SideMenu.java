@@ -5,7 +5,7 @@ import java.awt.*;
 
 
 public class SideMenu extends JPanel {
-    static JButton profile,helpAndSupport,portfolio,investing,wallet,newsAndArticles,portfolioCrypto,investingCrypto,newsAndArticlesCrypto;
+    static JButton profile,helpAndSupport,portfolio,investing,wallet,newsAndArticles,portfolioCrypto,investingCrypto,newsAndArticlesCrypto,logIn,signUp;
     SideMenu(){
         this.setBackground(new Color(217,218,222));//side menu BG
         this.setBounds(0,0,275,1080);// side menu bounds set
@@ -121,7 +121,7 @@ public class SideMenu extends JPanel {
         newsAndArticlesCrypto.setText("News And Articles");
         this.add(newsAndArticlesCrypto);
 
-        JButton logIn = new JButton();
+        logIn = new JButton();
         logIn.setBackground(new Color(18, 30, 255));
         logIn.setBounds(50,725,70,30);
         logIn.setBorder(null);
@@ -134,7 +134,7 @@ public class SideMenu extends JPanel {
         });
         this.add(logIn);
 
-        JButton signUp = new JButton();
+        signUp = new JButton();
         signUp.setBackground(new Color(18, 30, 255));
         signUp.setBounds(140,725,70,30);
         signUp.setBorder(null);

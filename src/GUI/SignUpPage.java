@@ -5,6 +5,7 @@ import Data.Account;
 import javax.swing.*;
 
 public class SignUpPage extends JFrame {
+    static Account acc;
     SignUpPage(){
         JFrame frame = new JFrame("SignUp page");
         frame.setSize(455,350);
@@ -50,9 +51,12 @@ public class SignUpPage extends JFrame {
         confirm.setFocusable(false);
         confirm.setBounds(170,210,80,30);
         confirm.addActionListener(e -> {
-            Account acc = new Account(nametxt.getText(),String.valueOf(passtxt.getPassword()),dobDaytxt.getText(),dobMontxt.getText(),dobYeartxt.getText(),contacttxt.getText(),emailtxt.getText(),0);
+            acc = new Account(nametxt.getText(),String.valueOf(passtxt.getPassword()),dobDaytxt.getText(),dobMontxt.getText(),dobYeartxt.getText(),contacttxt.getText(),emailtxt.getText(),0);
             LoginPage.data.put(acc.getUserName(),acc.getPassword());
             JOptionPane.showMessageDialog(null,"SingUp successful");
+            setProfile(acc);
+            SideMenu.logIn.setText("Log Out");
+            SideMenu.signUp.setVisible(false);
             frame.dispose();
         });
 
@@ -72,5 +76,12 @@ public class SignUpPage extends JFrame {
 
         frame.setLayout(null);
         frame.setVisible(true);
+    }
+    void setProfile(Account acc){
+        ProfileGUI.welcome.setText("Welcome "+ acc.getUserName());
+        ProfileGUI.userName.setText("           "+acc.getUserName());
+        ProfileGUI.dob.setText(acc.getDobDate()+"/"+acc.getDobMonth()+"/"+acc.getDobYear());
+        ProfileGUI.phoneNo.setText(acc.getContact());
+        ProfileGUI.e_mail.setText(acc.getEmail());
     }
 }
