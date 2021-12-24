@@ -1,6 +1,8 @@
 package Data;
 
 import java.io.IOException;
+import org.json.JSONException;
+
 
 public class Account {
 	private String userName;
@@ -69,6 +71,7 @@ public class Account {
 		this.contact = contact;
 	}
 
+
 	public String getEmail() {
 		return email;
 	}
@@ -79,7 +82,7 @@ public class Account {
 
 	public double getBalance() {
 		return balance;
-	}
+  }
 
 	public void setBalance(double balance) {
 		this.balance = balance;
