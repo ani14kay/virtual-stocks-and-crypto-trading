@@ -55,6 +55,7 @@ public class LoginPage extends JFrame {
                     if(data.containsKey(userText.getText())){
                         if(String.valueOf(passwordText.getPassword()).equals(data.get(userText.getText()))){
                             JOptionPane.showMessageDialog(null,"Welcome User");
+                            SignUpPage.setProfile(SignUpPage.acc);
                             frame.dispose();
                         }else{
                             JOptionPane.showMessageDialog(null,"Incorrect Password");
