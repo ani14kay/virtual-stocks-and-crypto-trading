@@ -55,8 +55,6 @@ public class SignUpPage extends JFrame {
             LoginPage.data.put(acc.getUserName(),acc.getPassword());
             JOptionPane.showMessageDialog(null,"SingUp successful");
             setProfile(acc);
-            SideMenu.logIn.setText("Log Out");
-            SideMenu.signUp.setVisible(false);
             frame.dispose();
         });
 
@@ -77,11 +75,13 @@ public class SignUpPage extends JFrame {
         frame.setLayout(null);
         frame.setVisible(true);
     }
-    void setProfile(Account acc){
+    static void setProfile(Account acc){
         ProfileGUI.welcome.setText("Welcome "+ acc.getUserName());
         ProfileGUI.userName.setText("           "+acc.getUserName());
         ProfileGUI.dob.setText(acc.getDobDate()+"/"+acc.getDobMonth()+"/"+acc.getDobYear());
         ProfileGUI.phoneNo.setText(acc.getContact());
         ProfileGUI.e_mail.setText(acc.getEmail());
+        SideMenu.logIn.setText("Log Out");
+        SideMenu.signUp.setVisible(false);
     }
 }
