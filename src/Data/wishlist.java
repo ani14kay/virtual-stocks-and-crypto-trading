@@ -1,5 +1,5 @@
 
-package GUI;
+package Data;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
@@ -14,7 +14,7 @@ public class wishlist   {
     private  JTable table = new JTable();
 
 
-    wishlist() {
+    public wishlist() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(420, 420);
         frame.setVisible(true);

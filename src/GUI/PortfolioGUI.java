@@ -4,7 +4,7 @@ package GUI;
 //import Data.Portfolio;
 //import Data.Stock;
 
-//import Data.stock_detail;
+import Data.*;
 import org.json.JSONException;
 
 import javax.swing.*;
@@ -166,21 +166,21 @@ public class PortfolioGUI extends JPanel implements ActionListener {
             // TODO Auto-generated catch block
             e1.printStackTrace();
         }
-//        if(e.getSource()==wishlist){
-//            wishlist wish=new wishlist();
-//        }
-//
-//        if(e.getSource()==market){
-//            System.out.println("Showing the market trends!");
-//            market mkt= new market();
-//        }
-//
+        if(e.getSource()==wishlist){
+            wishlist wish=new wishlist();
+        }
+
+        if(e.getSource()==market){
+            System.out.println("Showing the market trends!");
+            market mkt= new market();
+        }
+
 //        if(e.getSource()==port){
 //            view_port portview=new view_port();
 //        }
-//        if(e.getSource()==view){
-//            stock_detail detailview=new stock_detail();
-//        }
+        if(e.getSource()==view){
+            stock_detail detailview=new stock_detail();
+        }
 
         //Stock s=new Stock(stock);
         // p.displayStockPortfolio(s);
