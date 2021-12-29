@@ -19,12 +19,52 @@ public class InvestingCryptoGUI extends JPanel {
 
 
         // Creating data set for table
-        String[] columns = {"Crypto Name", "Value", "Statistics"};
+        String[] columns = {"Crypto Name", "Price", "Change in price"};
         Object[][] d = {
-                {"Sam", "29", " Twinkle House"},
-                {"Anna Sam", " 27 ", "Happy Villa"},
-                {"Iza Norah", " 4 ", "Happy house"},
-                {"Sam", "29", " Twinkle House"}
+                {"Bitcoin", "100", " 0.10"},
+                {"Ethereum", " 67 ", "0.15"},
+                {"Binance Coin", " 78 ", "0.01"},
+                {"Tether", "46", " 0.24"},
+                {"Solana", "578", " 0.84"},
+                {"Cardano", "547", " 0.136"},
+                {"USD Coin", "92", " 0.47"},
+                {"XRP", "48", " 0.139"},
+                {"Terra", "5812", " 0.137"},
+                {"Polkadot", "27", " 0.288"},
+                {"Avalanche", "218", " 0.202"},
+                {"Dogecoin", "279", " 0.27"},
+                {"Shiba Inu", "328", " 0.28"},
+                {"Polygon", "278", " 0.237"},
+                {"Binance USD", "272", " 0.127"},
+                {"Wrapped Bitcoin", "327", " 0.12"},
+                {"Uniswap", "237", " 0.30"},
+                {"Litecoin", "326", " 0.25"},
+                {"Terre USD", "25", " 0.29"},
+                {"Algorand", "56", " 0.12"},
+                {"Dai", "238", " 0.20"},
+                {"Bitcoin Cash", "27", " 0.328"},
+                {"TRON", "27", " 0.28"},
+                {"Stellar", "271", " 0.37"},
+                {"Cosmos", "2327", " 0.328"},
+                {"Fantom", "2376", " 0.28"},
+                {"The Sandbox", "56", " 0.38"},
+                {"Hedera", "5237", " 0.38"},
+                {"IOTA", "36", " 0.38"},
+                {"Helium", "328", " 0.39"},
+                {"Aave", "238", " 0.39"},
+                {"Gala", "29", " 0.20"},
+                {"The Graph", "29", " 0.218"},
+                {"EOS", "218", " 0.12"},
+                {"Pancake swap", "59", " 0.1329"},
+                {"Stacks", "38", " 0.28"},
+                {"Flow", "28", " 0.29"},
+                {"Maker", "2189", " 0.28"},
+                {"Quant", "29", " 0.28"},
+                {"Amp", "218", " 0.28"},
+                {"eCash", "219", " 0.128"},
+                {"Neo", "271", " 0.128"},
+                {"Celo", "217", " 0.237"},
+
 
         };
 
