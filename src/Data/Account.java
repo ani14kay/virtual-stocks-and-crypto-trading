@@ -1,7 +1,6 @@
 package Data;
 
 import java.io.IOException;
-import org.json.JSONException;
 
 
 public class Account {

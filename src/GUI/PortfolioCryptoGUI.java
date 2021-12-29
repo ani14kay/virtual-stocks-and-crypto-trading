@@ -46,7 +46,11 @@ public class PortfolioCryptoGUI extends JPanel {
             String[] headers = {"Name","Price","Change"};
             Object[][] data = {{"Tata",521,(new Random().nextInt(2)*(3)-1)*0.025}};
 
-            JTable table = new JTable(data,headers);
+            JTable table = new JTable(data,headers){
+                public boolean isCellEditable(int row, int column){
+                    return false;
+                }
+            };
 
 
             JScrollPane TablePane = new JScrollPane(table, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
