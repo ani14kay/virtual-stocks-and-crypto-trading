@@ -7,9 +7,18 @@ import java.awt.*;
 import java.util.Random;
 
 public class PortfolioCryptoGUI extends JPanel {
-    int numberOfCrypto =1;
+    static int numberOfCrypto = 0;
     JLabel nothing,suggestion;
     ImageIcon emptyError;
+    static String[] headers = {"Name","Price","Change"};
+    static String[][] data = {};
+    static JTable jt = new JTable(data,headers){
+        public boolean isCellEditable(int row, int column){
+            return false;
+        }
+    };
+    JButton buy;
+    JTextArea nametxt,valuetxt,changeInValuetxt;
     PortfolioCryptoGUI(){
         if(numberOfCrypto ==0) {
             //null page is created(when the user have no crypto for now)
@@ -43,17 +52,7 @@ public class PortfolioCryptoGUI extends JPanel {
             this.setBackground(new Color(250, 250, 255));
             this.setBounds(300, 150, 1200, 600);
 
-            String[] headers = {"Name","Price","Change"};
-            Object[][] data = {{"Tata",521,(new Random().nextInt(2)*(3)-1)*0.025}};
-
-            JTable table = new JTable(data,headers){
-                public boolean isCellEditable(int row, int column){
-                    return false;
-                }
-            };
-
-
-            JScrollPane TablePane = new JScrollPane(table, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
+            JScrollPane TablePane = new JScrollPane(jt, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
             TablePane.setBorder(null);
             TablePane.setBounds(0, 0, 1200, 600);
 
