@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class HomePageGUI extends JFrame {
+
     static  ImageIcon logo = new ImageIcon("Assets/Icons/logo.png");//creating an ImageIcon
     public static ProfileGUI profileGUI = new ProfileGUI();
     public static HelpAndSupportGUI helpAndSupportGUI = new HelpAndSupportGUI();

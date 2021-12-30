@@ -122,13 +122,13 @@ public class InvestingCryptoGUI extends JPanel {
                 JOptionPane.showMessageDialog(this,"Please select a Crypto first");
             }else{
                 String[] data = {nametxt.getText(),valuetxt.getText(),changeInValuetxt.getText()};
-                DefaultTableModel dtm = (DefaultTableModel)(PortfolioCryptoGUI.jt.getModel());
-                dtm.addRow(data);
+                PortfolioCryptoGUI.dtm.addRow(data);
+                PortfolioCryptoGUI.jt.setModel(PortfolioCryptoGUI.dtm);
                 JOptionPane.showMessageDialog(this,"Purchase successful");
                 nametxt.setText("");
                 valuetxt.setText("");
                 changeInValuetxt.setText("");
-                PortfolioCryptoGUI.numberOfCrypto++;
+                ++PortfolioCryptoGUI.numberOfCrypto;
             }
         });
 

@@ -2,25 +2,27 @@ package GUI;
 
 import Data.*;
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellRenderer;
 import java.awt.*;
 import java.util.Random;
 
 public class PortfolioCryptoGUI extends JPanel {
-    static int numberOfCrypto = 0;
+    static int numberOfCrypto = 1;
     JLabel nothing,suggestion;
     ImageIcon emptyError;
     static String[] headers = {"Name","Price","Change"};
-    static String[][] data = {};
-    static JTable jt = new JTable(data,headers){
+    static String[][] data;
+    static JTable jt = new JTable(){
         public boolean isCellEditable(int row, int column){
             return false;
         }
     };
+    static DefaultTableModel dtm = new DefaultTableModel(data,headers);
     JButton buy;
     JTextArea nametxt,valuetxt,changeInValuetxt;
     PortfolioCryptoGUI(){
-        if(numberOfCrypto ==0) {
+        if(numberOfCrypto == 0) {
             //null page is created(when the user have no crypto for now)
             nothing = new JLabel("You haven't purchased or sold any crypto yet!!");
             suggestion = new JLabel("Please go to Investing section");
