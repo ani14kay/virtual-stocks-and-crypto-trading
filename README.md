@@ -2,18 +2,13 @@
 
 ## <p style="text-align: center;">Virtual-Stocks-and-Crypto-Trading (VSCT)</p>
 
-### <p style="text-align: center;">**Introduction**</p>
 
+## About the project :
 ```
-
 This project is part of our semester assessment process.
 This course will cover all of the essential concepts of object-oriented programming.
 
 We'll be using Java to cover all the fundamental OOP concepts and algorithms.
-```
-## About the project :
-```
-
 ```
 
 ### **Managed By : -** 
@@ -28,7 +23,3 @@ We'll be using Java to cover all the fundamental OOP concepts and algorithms.
 - KALASH SINGH JADOUN (202051097)
 - MUGDHA SHARMA (202051214)
 
-### Contents
-```
-
-```
