@@ -181,7 +181,12 @@ public class PortfolioGUI extends JPanel implements ActionListener {
         if(e.getSource()==view){
             stock_detail detailview=new stock_detail();
         }
-
+           if(e.getSource()==purchase){
+            purchase pur_history=new purchase();
+        }
+        if(e.getSource()==sale){
+            sale sale_his=new sale();
+        }
         //Stock s=new Stock(stock);
         // p.displayStockPortfolio(s);
 
