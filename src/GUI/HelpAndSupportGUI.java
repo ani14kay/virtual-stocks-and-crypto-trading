@@ -7,7 +7,7 @@ public class HelpAndSupportGUI extends JPanel {
 
     HelpAndSupportGUI(){
 
-        JLabel header = new JLabel("<html><u><i>Hey there! Looking for Some Help ?!</i></u></html>",SwingConstants.LEFT);
+        JLabel header = new JLabel("<html><u>Hey there! Looking for Some Help ?!</u></html>");
         JTextArea faq = new JTextArea("\n\n Here are a few questions to help you figure out:- " +
         
                 "\n\n\n     1)  How to find Good Companies as there are many publicly listed companies in the Indian Stock market?\n\n" +
@@ -99,13 +99,14 @@ public class HelpAndSupportGUI extends JPanel {
                 "Secondly, unexpected movements in price could mean holding onto crypto for longer than initially expected.\n" +
                 "Thirdly, taxes that fall due at the end of the year. Depending on income tax bracket, people may have differing minimum profit targets. Frequently forgotten until the end of the financial year, keeping this factor in mind could help one enjoy their gains in moderation." +
                 "\n\n\n\n--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\n\n" );
+        
         JScrollPane scrollPane = new JScrollPane(faq);
 
         scrollPane.setBounds(40,50,1160,650);
         scrollPane.setBorder(null);
 
         header.setFont(new Font("Copperplate Gothic Bold",Font.ROMAN_BASELINE,30));
-        header.setBounds(465,0,1200,50);
+        header.setBounds(350,0,1175,50);
 
         faq.setBackground(new Color(250, 250, 255));
         faq.setLineWrap(true);
@@ -116,7 +117,7 @@ public class HelpAndSupportGUI extends JPanel {
         this.add(scrollPane);
         this.add(header);
         this.setBackground(new Color(250, 250, 255));
-        this.setBounds(300, 70, 1200, 700);
+        this.setBounds(300, 70, 1250, 700);
         this.setVisible(true);
         this.setLayout(null);
     }
