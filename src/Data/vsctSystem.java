@@ -2,7 +2,7 @@ package Data;
 
 import java.util.Scanner;
 
-public class BankSystem {
+public class vsctSystem {
     //Initialise classes
     private static TransferTransaction transfer;
     private static DepositTransaction deposit;
@@ -44,7 +44,7 @@ public class BankSystem {
     }
 
     //FUNCTIONS
-    public static void CreateAccount(Bank bank) throws Exception {
+    public static void CreateAccount(vsct vsct) throws Exception {
         System.out.println("Name of the account: ");
         Scanner nameScanner = new Scanner(System.in);
         String Name = nameScanner.next();
@@ -55,74 +55,74 @@ public class BankSystem {
             throw new Exception("ERROR: Initial balance cannot be a negative number");
         else {
             Account account = new Account(Name, Balance);
-            bank.AddAccount(account);
+            vsct.AddAccount(account);
             System.out.println("You have successfully created an account");
             System.out.println(account.Name() + ", Welcome!");
         }
     }
 
-    public static Account FindAccount(Bank bank) {
+    public static Account FindAccount(vsct vsct) {
         System.out.println("Name of the account: ");
         Scanner nameScanner = new Scanner(System.in);
         String name = nameScanner.next();
-        Account account = bank.GetAccount(name);
+        Account account = vsct.GetAccount(name);
         if (account == null) System.out.println("Error: Account does not exist");
         else System.out.println("Account found!");
         return account;
     }
 
-    public static void DoRollback(Bank bank) throws Exception {
+    public static void DoRollback(vsct vsct) throws Exception {
         System.out.println("Choose translation to roll back: ");
         Scanner tranNum = new Scanner(System.in);
         int choice = tranNum.nextInt();
-        Transaction transaction = bank.GetTransaction(choice);
+        Transaction transaction = vsct.GetTransaction(choice);
         if (transaction != null) transaction.Rollback();
     }
 
-    public static void DoPrintHistory(Bank bank) throws Exception {
-        bank.PrintTransactionHistory(); DoRollback(bank);
+    public static void DoPrintHistory(vsct vsct) throws Exception {
+        vsct.PrintTransactionHistory(); DoRollback(vsct);
     }
 
-    public static void DoDeposit(Bank bank) throws Exception {
-        Account account = FindAccount(bank);
+    public static void DoDeposit(vsct vsct) throws Exception {
+        Account account = FindAccount(vsct);
         System.out.println("Deposit amount: ");
         Scanner scanner = new Scanner(System.in);
         double amount = scanner.nextDouble();
         deposit = new DepositTransaction(account, amount);
-        bank.ExecuteTransaction(deposit);
+        vsct.ExecuteTransaction(deposit);
         deposit.Print();
     }
 
-    public static void DoWithdraw(Bank bank) throws Exception {
-        Account account = FindAccount(bank);
+    public static void DoWithdraw(vsct vsct) throws Exception {
+        Account account = FindAccount(vsct);
         System.out.println("Withdraw amount: ");
         Scanner scanner = new Scanner(System.in);
         double amount = scanner.nextDouble();
         withdraw = new WithdrawTransaction(account, amount);
-        bank.ExecuteTransaction(withdraw);
+        vsct.ExecuteTransaction(withdraw);
         withdraw.Print();
     }
 
-    public static void DoTransfer(Bank bank) throws Exception {
+    public static void DoTransfer(vsct vsct) throws Exception {
         System.out.println("Host account name: ");
-        Account accountFrom = FindAccount(bank);
+        Account accountFrom = FindAccount(vsct);
         System.out.println("Receiver account name: ");
-        Account accountTo = FindAccount(bank);
+        Account accountTo = FindAccount(vsct);
         System.out.println("Transfer amount: ");
         Scanner scanner = new Scanner(System.in);
         double amount = scanner.nextDouble();
         transfer = new TransferTransaction(accountFrom, accountTo, amount);
-        bank.ExecuteTransaction(transfer);
+        vsct.ExecuteTransaction(transfer);
         transfer.Print();
     }
 
-    public static void DoPrint(Bank bank) throws Exception {
-        try { Account account = FindAccount(bank); account.Display(); }
+    public static void DoPrint(vsct vsct) throws Exception {
+        try { Account account = FindAccount(vsct); account.Display(); }
         catch (Exception ignored) {}
     }
 
     public static void main(String[] args) throws Exception {
-        Bank sai = new Bank();
+        vsct sai = new vsct();
         while(true) {
             switch (ReadMenuOption()) {
                 case CREATE_ACCOUNT -> CreateAccount(sai);

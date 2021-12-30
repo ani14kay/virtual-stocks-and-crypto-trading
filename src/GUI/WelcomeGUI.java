@@ -31,7 +31,7 @@ public class WelcomeGUI extends JPanel {
                                             "Some crypto schemes use validators to maintain the cryptocurrency. In a proof-of-stake model, owners put up their tokens as collateral. In return, they get authority over the token in <br/>" +
                                             "proportion to the amountthey stake." +
                                             "<br/><br/>Generally, these token stakers get additional ownership in the token over time via network fees, newly minted tokens or other such reward mechanisms.[3] Cryptocurrency does not exist <br/>" +
-                                            "in physical form (like paper money) and is typically not issued by a central authority. Cryptocurrencies typically use decentralized control as opposed to a central bank digital currency.<br/><br/><br/></html>");
+                                            "in physical form (like paper money) and is typically not issued by a central authority. Cryptocurrencies typically use decentralized control as opposed to a central vsct digital currency.<br/><br/><br/></html>");
         JLabel warning = new JLabel("<html>Investment involves risk. As a general rule, you should only trade in financial products that you are familiar with and understand the risk associated with them. The risk warning described in each financial product below is not exhaustive, you should carefully  <br/>" +
                                         "consider your investment experience, financial situation, investment objective, risk tolerance level and consult your independent financial adviser as to the suitability of your situation prior making any investment.<br/><br/><br/></html>");
         JButton letsGo = new JButton("Lets Go");

@@ -3,11 +3,11 @@ package Data;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Bank {
+public class vsct {
     private final List<Account> _accounts;
     private final List<Transaction> _transactions;
 
-    public Bank() {
+    public vsct() {
         _accounts = new ArrayList<>();
         _transactions = new ArrayList<>();
     }
