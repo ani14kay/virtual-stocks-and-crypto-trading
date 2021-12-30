@@ -109,6 +109,12 @@ public class market implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         // TODO Auto-generated method stub
+         if (e.getSource() == popular) {
+            this.get_pop_stocks();
+        }
+        if (e.getSource() ==indices ) {
+            this.marketIndices();
+        }
 
     }
 
