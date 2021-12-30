@@ -92,12 +92,6 @@ public class InvestingCryptoGUI extends JPanel {
         changeInValuetxt.setEditable(false);
         changeInValuetxt.setBorder(BorderFactory.createLineBorder(Color.black));
 
-        buy = new JButton("Buy");
-        buy.setBounds(860,530,130,30);
-        buy.setBackground(new Color(18, 30, 255));
-        buy.setForeground(new Color(255,255,255));
-        buy.setFocusable(false);
-
 
         // JTable initialization
         jt = new JTable(d, columns){
@@ -117,6 +111,26 @@ public class InvestingCryptoGUI extends JPanel {
         });
         jt.setBounds(0, 0, 1200, 500);
 
+        buy = new JButton("Buy");
+        buy.setBounds(860,530,130,30);
+        buy.setBackground(new Color(18, 30, 255));
+        buy.setForeground(new Color(255,255,255));
+        buy.setFocusable(false);
+
+        buy.addActionListener(e ->{
+            if(nametxt.getText().isBlank()||valuetxt.getText().isBlank()||changeInValuetxt.getText().isBlank()){
+                JOptionPane.showMessageDialog(this,"Please select a Crypto first");
+            }else{
+                String[] data = {nametxt.getText(),valuetxt.getText(),changeInValuetxt.getText()};
+                DefaultTableModel dtm = (DefaultTableModel)(PortfolioCryptoGUI.jt.getModel());
+                dtm.addRow(data);
+                JOptionPane.showMessageDialog(this,"Purchase successful");
+                nametxt.setText("");
+                valuetxt.setText("");
+                changeInValuetxt.setText("");
+                PortfolioCryptoGUI.numberOfCrypto++;
+            }
+        });
 
         JScrollPane scrollPane = new JScrollPane(jt, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_AS_NEEDED);
         scrollPane.setBorder(null);
@@ -133,6 +147,7 @@ public class InvestingCryptoGUI extends JPanel {
         this.add(scrollPane);
         this.setVisible(true);
         this.setLayout(null);
+
     }
 }
 
