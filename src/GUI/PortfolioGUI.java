@@ -175,9 +175,9 @@ public class PortfolioGUI extends JPanel implements ActionListener {
             market mkt= new market();
         }
 
-//        if(e.getSource()==port){
-//            view_port portview=new view_port();
-//        }
+      if(e.getSource()==port){
+           view_port portview=new view_port();
+       }
         if(e.getSource()==view){
             stock_detail detailview=new stock_detail();
         }
